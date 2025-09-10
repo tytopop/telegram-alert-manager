@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Telegram Alert Manager</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🔔 Telegram Alert Manager</h1>
+        <p>Подключите свой аккаунт для мониторинга запрещённых каналов.</p>
+        <form method="POST" action="/setup">
+            <p><label>Ваш Telegram ID (узнать у @userinfobot): <input name="user_id" required type="number"></label></p>
+            <p><label>API ID: <input name="api_id" required></label></p>
+            <p><label>API Hash: <input name="api_hash" required></label></p>
+            <p><label>Номер телефона (+7...): <input name="phone" required></label></p>
+            <button type="submit">Подключить аккаунт</button>
+        </form>
+        <br>
+        <a href="/delete">Удалить аккаунт</a>
+    </div>
+</body>
+</html>

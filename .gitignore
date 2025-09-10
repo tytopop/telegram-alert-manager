@@ -1,0 +1,38 @@
+# Конфигурация
+.env
+*.env
+
+# База данных
+users.db
+*.db
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.coverage
+.cache
+pytest_cache/
+.pytest_cache/
+
+# Логи
+logs/
+*.log
+
+# ОС
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Удалить аккаунт</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>🗑️ Удалить мой аккаунт из системы</h2>
+        <p>Ваша сессия будет удалена, и мониторинг прекратится.</p>
+        <form method="POST" action="/delete">
+            <p><label>Ваш Telegram ID: <input name="user_id" required type="number" placeholder="123456789"></label></p>
+            <button type="submit">Удалить аккаунт</button>
+        </form>
+        <br>
+        <a href="/">← Назад</a>
+    </div>
+</body>
+</html>

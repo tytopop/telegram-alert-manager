@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Введите код подтверждения</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>📬 Проверьте Telegram — мы отправили вам код</h2>
+        <form method="POST" action="/verify">
+            <input type="hidden" name="user_id" value="{{ request.form['user_id'] }}">
+            <input type="hidden" name="api_id" value="{{ request.form['api_id'] }}">
+            <input type="hidden" name="api_hash" value="{{ request.form['api_hash'] }}">
+            <input type="hidden" name="phone" value="{{ request.form['phone'] }}">
+            <p><label>Код из Telegram: <input name="code" required autofocus></label></p>
+            <button type="submit">Подтвердить</button>
+        </form>
+        <br>
+        <a href="/">← Назад</a>
+    </div>
+</body>
+</html>
